@@ -320,3 +320,9 @@ variable "cluster_encryption_config" {
   }))
   default = []
 }
+
+variable "worker_ignore_changes" {
+  description = ""
+  type        = list(string)
+  default     = ["desired_capacity"]
+}
